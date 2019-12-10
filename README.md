@@ -1,2 +1,2 @@
 # BipolarTransistorLogic
-BTL for Matrix rank Transforming in endless nonlinearity
+BTL for Matrix rank dot Transforming in endless nonlinearity (AKA BTL for Mr.Tien)

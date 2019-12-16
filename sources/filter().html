@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>filter()</title>
+        <script type = "text/javascript" src = "../jquery-3.4.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+                $('*').css('font-size', 40);
+
+                $('div').filter('.div03').css('background-color', 'yellow');
+
+                // $('div').filter(function(index) {
+                //     return index == 1;
+                // }).css('background-color','yellow');
+
+            });
+        </script>
+    </head>
+
+    <body>
+        <div>Đây là thẻ div thứ 1
+        </div>
+
+        <div>Đây là thẻ div thứ 2
+        </div>
+
+        <div class="div03">Đây là thẻ div thứ 3 và có class là div03
+        </div>
+
+        <div>Đây là thẻ div thứ 4
+        </div>
+    </body>
+</html>

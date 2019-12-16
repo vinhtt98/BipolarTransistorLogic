@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>remove</title>
+        <script type = "text/javascript" src = "../jquery-3.4.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+                $('*').css('font-size', 40);
+
+                $('p').remove('#p01');
+            });
+        </script>
+    </head>
+
+    <body>
+        <p id="p01"> Đây là thẻ p thứ 1 </p>
+        <p id="p02"> Đây là thẻ p thứ 2 </p>
+        <p id="p03"> Đây là thẻ p thứ 3 </p>
+    </body>
+</html>

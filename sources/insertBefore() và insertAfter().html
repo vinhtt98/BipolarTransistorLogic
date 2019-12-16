@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>insertAfter() và insertBefore()</title>
+        <script type = "text/javascript" src = "../jquery-3.4.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+                $('*').css('font-size', 40);
+
+                $('<p> Đây là thẻ p bị chèn vào trước </p>').insertBefore($('p.original')).css("font-style", 'italic');
+                $('<p> Đây là thẻ p bị chèn vào sau </p>').insertAfter($('p.original')).css("font-style", 'oblique');
+            });
+        </script>
+    </head>
+
+    <body>
+        <p class="original"> Đây là thẻ p ban đầu </p>
+    </body>
+</html>

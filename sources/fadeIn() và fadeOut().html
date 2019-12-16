@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>fadeIn() và fadeOut()</title>
+        <style>
+            div {
+                background-color: blue;
+                display: none;
+                float: left;
+                margin-right: 20px;
+                height: 200px;
+                width: 200px;
+            }
+            p {
+                clear: both;
+            }
+        </style>
+        <script type = "text/javascript" src = "../jquery-3.4.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+                $('*').css('font-size', 40);
+
+                $('button.fadeIn').click(function() {
+                    $('.fadeIn500').fadeIn(500);
+                    $('.fadeIn1000').fadeIn(1000);
+                    $('.fadeIn2000').fadeIn(2000);
+                })
+
+                $('button.fadeOut').click(function() {
+                    $('.fadeIn500').fadeOut(2000);
+                    $('.fadeIn1000').fadeOut(1000);
+                    $('.fadeIn2000').fadeOut(500);
+                })
+            });
+        </script>
+    </head>
+
+    <body>
+        <p><button class="fadeIn">Fade in click</button></p>
+        <p><button class="fadeOut">Fade out click</button></p>
+        <div class="fadeIn500">Fade in 0.5s</div>
+        <div class="fadeIn1000">Fade in 1s</div>
+        <div class="fadeIn2000">Fade in 2s</div>
+
+    </body>
+</html>

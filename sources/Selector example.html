@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>The jQuery Example</title>
+        <script type = "text/javascript" src = "../jquery-3.4.1.js">
+        </script>
+		
+        <script type = "text/javascript">
+        $(document).ready(function() {
+            $('*').css('font-size', 40);
+            $("div").click(function() {
+                alert("Hello, Element!");
+            });
+
+            $(".Class08").click(function() {
+                alert("Hello, Class!");
+            });
+
+            $("#div02").click(function() {
+                alert("Hello, ID!");
+            });
+        });
+        </script>
+    </head>
+	
+    <body>
+        <div>Hello, Class!</div>
+        <div class="Class08">
+            <b> <u> <p> Hi Class! </p> </u> </b>
+        </div>
+        <div id="div02"> Bonjour Classe </div>
+    </body>
+</html>

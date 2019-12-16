@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>append() và appendTo()</title>
+        <script type = "text/javascript" src = "../jquery-3.4.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+                $('*').css('font-size', 40);
+
+                // $('div:first').append('<p style="font-style: bold; background-color: yellow">Còn đây là thẻ p được chèn vào thẻ div thứ 1<p>');
+
+                // $('div').append(function() {
+                //     return '<p style="background-color: yellow"> Thẻ p mới đc thêm vào ' + this.className + '</p>';
+                // });
+
+                // $('<p style="background-color:green"> Đây là thẻ p chèn bằng appendTo() </p>').appendTo('div');
+            });
+        </script>
+    </head>
+
+    <body>
+        <div>Đây là thẻ div thứ 1
+            <p>Đây là thẻ p trong thẻ div thứ 1.</p>
+        </div>
+
+        <div style="font-style: italic; color: blueviolet" class="div02">Đây là thẻ div thứ 2
+            <p>Đây là thẻ p trong thẻ div thứ 2.</p>
+        </div>
+
+        <p>Còn đây là thẻ p</p>
+    </body>
+</html>
